@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Accounts</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" class="width=device-width" initial scale 1.0>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<script src="https://kit.fontawesome.com/8b2fe05886.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body >
+	<header>
+
+		<div class="head-1">
+		
+			<a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  shopping </a>
+		
+			<div class="form">
+				<form action="">
+					<input type="search" placeholder="search products" id="search" /> 
+					<a href="search.html" for="search"  class="fas fa-search" title="search" aria-hidden="true"></a>
+				</form>
+			</div>
+		
+		</div>
+		
+		<div class="head-2">
+		
+			<div id="menu" class="fas fa-bars"></div>
+		
+			<nav class="navigation">
+				<ul>
+					<li><a class="active" href="index.html">home</a></li>
+					<li><a href="new.html">arrival</a></li>
+					<li><a href="featured.html">featured</a></li>
+					<li><a href="gallery.html">offer</a></li>
+		
+				</ul>
+			</nav>
+			<div class="icons">
+                <a href="login.html" class="fas fa-user" aria-hidden="true"> accounts</a>
+            </div>
+			
+		
+		</div>
+		
+		</header>
+	<div class="login">
+		<div class="hero">
+			<div class="login-box">
+			<div id="btn"></div>
+		<button type="button"  class="toggle-btn"onclick="login()">Log In</button>
+		<button type="button" class="toggle-btn" onclick="register()">Register</button>
+		</div>
+		<div class="socil-icon">
+			<div class="login" >
+				<a href="https://www.facebook.com/" title="facebook" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/" title="instagram" > <i class="fa fa-instagram "></i>
+					<a href="https://www.twitter.com/" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</div>
+		
+		</div>
+		<label>
+		<form id="login" class="input">
+			<input type="text" class="input-field" placeholder="User id" required>
+			<input type="text" class="input-field" placeholder="Enter password" required>
+			<input type="checkbox" class="check-box" ><span>remember password</span>
+			<button type="submit" class="submit">log in</button>
+		</form>
+	</label>
+	<label>
+		<form id="register" class="input">
+			<input type="text" class="input-field" placeholder="Create user name" required>
+			<input type="email" class="input-field" placeholder="Create user id" required>
+			<input type="text" class="input-field" placeholder="Create enter password" required>
+			<input type="checkbox" class="check-box" ><span>i agree to terms and condition</span>
+			<button type="submit" class="submit">Register</button>
+		</form>
+	</label>
+	</div>
+	</div>
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+		function register(){
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+		}
+		function login(){
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0px";
+		}
+
+
+	</script>
+	          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+			  <section class="footer">
+
+				<div class="box-container">
+			
+					<div class="box">
+						<a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  shopping </a>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+					</div>
+			
+					<div class="box">
+						<h2>links</h2>
+						<a href="#">home</a>
+						<a href="#">arrival</a>
+						<a href="featured.html">featured</a>
+						<a href="gallery.html">gallery</a>
+					</div>
+			
+					<div class="box">
+						<h2>contact us</h2>
+						<p> <i class="fas fa-home"></i>
+							Kathmandu,Nepal
+						</p>
+						<p> <i class="fas fa-phone"></i>
+							**************
+						</p>
+						<p> <i class="fas fa-globe"></i>
+							xxxxxx@gmail.com
+						</p>
+					</div>
+			
+				</div>
+			
+			<h1 class="credit"> <i class="fa fa-copy" aria-hidden="true"></i> &copy; 2021| created by Saugat pandey | all rights reserved. </h1>
+			
+			</section>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

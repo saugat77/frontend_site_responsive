@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+<div class="head-1">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-bag" title="shopping"></i>  shopping </a>
+   
+
+    <div class="form">
+        <form action="">
+            <input type="search" placeholder="search products" id="search" /> 
+            <a href="search.html" for="search"  class="fas fa-search" title="search"></a>
+        </form>
+    </div>
+
+</div>
+
+<div class="head-2">
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a class="active" href="index.html">home</a></li>
+            <li><a href="new.html">arrival</a></li>
+            <li><a href="featured.html">featured</a></li>
+            <li><a href="gallery.html">offer</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <li style="cursor: pointer; margin-bottom: 10px;">
+            <a onclick="changeFont('decrease')" title="Decrease Font Size" class="button"> A- </a>
+            <a onclick="changeFont('original')" title="Original Font Size" class="button"> A  </a>
+            <a onclick="changeFont('increase')" title="Increase Font Size" class="button"> A+ </a>
+          </li>
+   
+        <a href="login.html" class="fas fa-user"> accounts</a>
+    </div>
+
+</div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="home-slider owl-carousel">
+
+    <div class="item">
+        <img src="images\1.jpg" alt="">
+        <div class="content">
+            <h2>heavy discounts</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque odit fugit voluptatibus, architecto quo nesciunt!</p>
+            <a href="product.html"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/img2.jpg" alt="">
+        <div class="content">
+            <h2>latest gadgets</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi expedita aperiam animi aliquid, perferendis distinctio.</p>
+            <a href="product.html"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/home_img3.jpg" alt="">
+        <div class="content">
+            <h2>shoes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita esse cupiditate dicta reprehenderit error?</p>
+            <a href="product.html"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="images/home_img4.jpg" alt="">
+        <div class="content">
+            <h2>vegetable</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ex?</p>
+            <a href="product.html"><button class="btn">discover</button></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+
+
+
+<!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <h1>newsletter</h1>
+    <p>get in touch for latest discounts and updates and if you have any query just enter your email id we will reach out to you</p>
+    <form action="">
+        <input type="email" placeholder="enter your email">
+        <input type="submit" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i>  shopping </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+        </div>
+
+        <div class="box">
+            <h2>links</h2>
+            <a href="index.html">home</a>
+            <a href="new.html">arrival</a>
+            <a href="featured.html">featured</a>
+            <a href="gallery.html">gallery</a>
+        </div>
+
+        <div class="box">
+            <h2>contact us</h2>
+            <p> <i class="fas fa-home" title="home"></i>
+                Kathmandu,Nepal
+            </p>
+            <p> <i class="fas fa-phone" title="phone"></i>
+                **************
+            </p>
+            <p> <i class="fas fa-globe" title="globe"></i>
+                saugatpandey4@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+<h1 class="credit"> <i class="fa fa-copy" title="copy" aria-hidden="true"></i> &copy; 2021| created by <span>Saugat Pandey</span> | all rights reserved. </h1>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="index.js"> </script>
+<script src="script.js"> </script>
+<script>
+    function changeFont(operation){
+    var decreaseLimit = 140;
+    var increaseLimit = 200;
+    var bodyFontSize = localStorage.getItem('bodyFontSize');
+    if(bodyFontSize === null){
+        bodyFontSize = 100;
+    }
+    if(operation === "increase"){
+        if(bodyFontSize < increaseLimit){
+            bodyFontSize = parseInt(bodyFontSize) + 20;
+        }
+    }else if(operation === "decrease"){
+        if(bodyFontSize > decreaseLimit){
+            bodyFontSize = parseInt(bodyFontSize) - 20;
+        }
+    }else{
+        bodyFontSize = 100;
+    }
+    localStorage.setItem('bodyFontSize', bodyFontSize)
+    document.getElementsByTagName("body")[0].style.fontSize = bodyFontSize+"%";
+}
+</script>
+    
+</body>
+</html>

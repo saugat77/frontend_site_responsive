@@ -1,0 +1,190 @@
+.deal{
+    min-height: 100vh;
+}
+
+.deal .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.deal .box-container .box{
+    flex:1 1 40rem;
+    height: 25rem;
+    margin:2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.deal .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.deal .box-container .box .content{
+    position: absolute;
+    top:55%; left: 3rem;
+    transform:translateY(-50%);
+}
+
+.deal .box-container .box .content h2{
+    font-size: 3.5rem;
+    color:#FAFAD2;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.deal .box-container .box .content p{
+    font-size: 2rem;
+    color:#FAFAD2;
+}
+
+.deal .box-container .box .content .btn{
+    margin:1.4rem 0;
+}
+
+.deal .icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.deal .icons-container .icons{
+    flex:1 1 25rem;
+    padding:1rem;
+    margin:1rem;
+    text-align: center;
+    border:.2rem solid var(--blue);
+}
+
+.deal .icons-container .icons i{
+    color:black;
+    font-size: 4rem;
+    padding:1rem 0;
+}
+
+.deal .icons-container .icons h2{
+    color:#333;
+    font-size: 2rem;
+}
+
+.deal .icons-container .icons p{
+    color:#666;
+    font-size: 1.3rem;
+    padding:1rem 0;
+}
+
+.newsletter{
+    background:linear-gradient(var(--blue),var(--blue)), url(../images/deal1.jpg) no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding:4rem 1rem;
+    text-align: center;
+}
+
+.newsletter h1{
+    color:#FAFAD2;
+    font-size: 4rem;
+}
+
+.newsletter p{
+    color:#FAFAD2;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.newsletter form{
+    height:5.5rem;
+    max-width: 60rem;
+    margin:0 auto;
+    padding:0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    background:white (0,0,0,.3);
+}
+
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 80%;
+    padding:0 1rem;
+    outline: none;
+    border:none;
+    background:none;
+    font-size: 2rem;
+    color:#FAFAD2;
+}
+
+.newsletter form input[type="submit"]{
+    border-radius: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+ .cart-page{
+     margin: 20px 10px;
+     padding: 20px;
+    position: center;
+ }
+ table{
+     width: 80%;
+     border-collapse:collapse;
+     align-items: center;
+
+ }
+ .cart-info{
+     display: flex;
+     flex-wrap: wrap;
+     font-size: 40 bold;
+ }
+ th{
+     text-align: left;
+     padding: 5px;
+     color: black;
+     background: red;
+     font-weight: normal;
+ }
+ td{
+     padding: 28px 5px;
+ }
+ td input{
+     width: 50px;
+     height: 30px;
+     font-size: larger;
+     background-color: wheat;
+     border-radius: 20px;
+     padding: 10px;
+ }
+ td a{
+     color: #ff523b;
+     font-size: 12px;
+ }
+ td img{
+     width: 250px;
+     height: 250px;
+     padding: 10px;
+ }
+
+
+
+ #button-cart{
+    font-size: 30px;
+    background-color: wheat; 
+    color: black;
+     border-radius: 15px;
+ }
